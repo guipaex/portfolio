@@ -173,9 +173,17 @@ h4{
     border-color:rgba(0,0,0,0);
     background-color: rgba(27, 255, 27);
 }
+#quebra{
+    display: none;
+}
 
-    #quebra{
-        display: none;
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;	
+    text-align: center;
+    margin-bottom: 7px;
     }
 
 /*-------------------------Responsividade------------------------------------*/
