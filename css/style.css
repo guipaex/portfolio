@@ -1,0 +1,210 @@
+@import url("animation.css");
+
+*{
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background: linear-gradient(150deg, #000, #434343);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header{
+    display:flex;
+    height: 70px;
+    padding-top:15px;
+    justify-content:space-evenly;   /*Justifica os itens priorizando o centro*/
+    align-items:center;             /*centraliza verticalmente os itens*/
+    margin-bottom:60px
+}
+#logo{
+    display:flex;
+    align-items:center;
+
+    /*Logo em txt*/
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 30px;
+
+    transition: 300ms;
+}
+#paex_icon{
+    width: 40px;
+    fill: white;
+
+    transition: 500ms;
+}
+#paex_icon:hover{
+    fill:none;
+    stroke: chartreuse;
+    stroke-width: 25px;
+
+    cursor: pointer;
+}
+
+header ul{
+    display:flex;
+    justify-content:space-around;
+}
+
+header ul li a {
+    display: block;
+    position: relative;
+    padding: 0.2em 20px;
+    transform: scale(1.3);
+    margin: 5px auto;
+
+
+    transition: 500ms;
+}
+
+.icon{
+    width: 17px;
+    fill: white;
+    text-align: center;
+    align-items: center;
+
+    transform-origin: center center;
+
+    transition: 300ms;
+}
+
+.icon:hover{
+    width: 20px;
+    margin: -2px;
+    fill:chartreuse
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 40pt;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    line-height:38pt;
+}
+
+h4{
+    margin:20px auto;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+#menu{
+    list-style-type: none;
+    color:rgba(27, 255, 27);
+}
+
+#bio{
+    text-align: center;
+    max-width: 80%;
+    margin:auto;
+}
+
+#arrow{
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    animation:
+        balance 1.5s linear infinite;
+}
+
+.form{
+    height:100px;
+    width: 80%;
+    display:flex;    
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    margin: 45px auto;
+
+}
+.form input{
+    width: 300px;
+    height: 35px;
+    padding: 20px;
+    margin: 0 auto;
+
+    font-style: italic;
+    color:black;
+
+    justify-content:center;
+    border-radius: 7px 0 0 7px;
+    border: none;
+    transition: 300ms;
+    
+}
+.form button{
+    width: 75px;
+    height: 40px;
+    margin-left:-5px;
+
+    text-transform: uppercase;
+    font-weight: 600;
+    color:white;
+
+    cursor: pointer;
+    text-align: center;
+    
+    border-radius: 0 7px 7px 0;
+    border-style: solid;
+    border-color:#fff;
+    background-color: rgb(0,0,0,0);
+
+    transition: 300ms;
+}
+.form button:hover{
+    font-weight: 900;
+    color:black;
+
+    width: 85px;
+    height: 40px;
+
+    padding: 5px;
+
+    border-style: solid;
+    border-color:rgba(0,0,0,0);
+    background-color: rgba(27, 255, 27);
+}
+
+    #quebra{
+        display: none;
+    }
+
+/*-------------------------Responsividade------------------------------------*/
+/*------------Se o tamanho da tela for menor que 480px-----------------------*/
+@media only screen and (max-width:480px) {
+
+    #quebra {
+        display:block;
+    }
+
+    header ul li a {
+        font-size: 10pt;
+        padding: 0.2em 7px;
+    }   
+    .form input{
+        display: block;
+        margin:auto;
+        border-radius: 7px 7px 7px 7px;
+    }
+    .form button{
+        display: block;
+        margin: auto;
+        margin-top:20px;
+        border-radius: 7px 7px 7px 7px;
+    }
+    body{
+        background: linear-gradient(150deg, #000, #434343);
+        background-size: 100vh;
+        background-repeat: no-repeat;
+    }
+    
+}
